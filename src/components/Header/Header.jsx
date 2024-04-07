@@ -2,10 +2,10 @@ import { useState } from 'react';
 import Nav from './Nav';
 import Photo from './Photo';
 import './header.css';
-import klaus from '../../assets/klaus.jpg';
 import uploadPhoto from '../../assets/upload-photo.png';
+import bar from '../../assets/bar.png';
 
-export default function Header({ setPage }) {
+export default function Header() {
     const [background, setBackground] = useState(
         localStorage.getItem('photo') || uploadPhoto
     );
@@ -23,11 +23,11 @@ export default function Header({ setPage }) {
     return (
         <header>
             <div
-                style={{ backgroundImage: `url(${background})` }}
+                style={{ backgroundImage: `url(${bar})` }}
                 className="background"
             ></div>
             <Photo setBackground={setBackground} />
-            <Nav setPage={setPage} />
+            <Nav />
         </header>
     );
 }

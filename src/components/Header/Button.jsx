@@ -1,16 +1,7 @@
-export default function Button({ name, setPage }) {
+export default function Button({ children }) {
     function scrollIntoMain() {
         document.querySelector('main').scrollIntoView({ behavior: 'smooth' });
     }
 
-    return (
-        <button
-            onClick={() => {
-                setPage();
-                scrollIntoMain();
-            }}
-        >
-            {name}
-        </button>
-    );
+    return <div onClick={scrollIntoMain}>{children}</div>;
 }

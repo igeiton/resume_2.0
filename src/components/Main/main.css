@@ -58,3 +58,28 @@ main {
   font-size: 18px;
   margin: 2.5% auto 2.5% 60px;
 }
+
+.tech {
+  display: flex;
+  flex-direction: column;
+  align-self: start;
+}
+.tech div {
+  align-self: start;
+}
+.tech ul {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 5px;
+}
+.tech ul li {
+  font-size: 16.8px;
+  display: flex;
+  align-items: center;
+  grid-gap: 10px;
+  margin-left: 40px;
+}
+.tech ul li img {
+  width: 16.8px;
+  height: 16.8px;
+}

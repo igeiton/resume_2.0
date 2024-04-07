@@ -33,17 +33,35 @@ nav {
   justify-content: center;
 }
 
-button {
+.activeLink div {
+  color: #fff;
+  background-color: grey;
+  border: 3px solid #00f7ff;
+}
+
+header a {
+  text-decoration: none;
+  color: #000;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 5px 0 #000;
+}
+header a:visited {
+  color: #000;
+}
+
+header nav div {
+  display: flex;
+  justify-content: center;
   padding: 10px 15px;
   flex: 1 1 25%;
-  max-width: 25%;
   background-color: #fff;
   border: none;
-  border-radius: 10px;
+  border-radius: inherit;
   border: 3px solid #fff;
   transition: 0.3s;
 }
-button:hover {
+header nav div:hover {
   color: #fff;
   background-color: #000;
 }

@@ -31,6 +31,7 @@ main {
     flex-direction: column;
     div {
         display: flex;
+        // flex-direction: column;
         align-items: center;
         grid-gap: 15px;
     }
@@ -59,5 +60,34 @@ main {
     li {
         font-size: 18px;
         margin: $main-pd/2 auto $main-pd/2 60px;
+    }
+}
+
+.tech {
+    display: flex;
+    flex-direction: column;
+    align-self: start;
+
+    div {
+        align-self: start;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        grid-gap: 5px;
+    }
+
+    ul li {
+        font-size: $size * 0.8;
+        display: flex;
+        align-items: center;
+        grid-gap: 10px;
+        margin-left: 40px;
+
+        img {
+            width: $size * 0.8;
+            height: $size * 0.8;
+        }
     }
 }

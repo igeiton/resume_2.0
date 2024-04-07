@@ -1,12 +1,24 @@
 import Button from './Button';
+import CustomLink from '../CustomLink';
 
-export default function Nav({ setPage }) {
+export default function Nav() {
     return (
         <nav>
-            <Button setPage={() => setPage('contacts')} name="Contacts" />
-            <Button setPage={() => setPage('stack')} name="Stack" />
-            <Button setPage={() => setPage('work')} name="Work" />
-            <Button setPage={() => setPage('education')} name="Education" />
+            <CustomLink to="/contacts">
+                <Button>Contacts</Button>
+            </CustomLink>
+
+            <CustomLink to="/stack">
+                <Button>Stack</Button>
+            </CustomLink>
+
+            <CustomLink to="/work">
+                <Button>Work</Button>
+            </CustomLink>
+
+            <CustomLink to="/education">
+                <Button>Education</Button>
+            </CustomLink>
         </nav>
     );
 }
